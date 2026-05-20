@@ -18,4 +18,10 @@ router.get('/matches/:itemId', verifyToken, (req, res) => {
     res.render('matches', { itemId: req.params.itemId });
 });
 
+router.get('/my-items', (req,res)=> {
+    res.render("my-items")
+});
+
+
+
 module.exports = router;
